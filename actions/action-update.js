@@ -1,11 +1,12 @@
 'use strict'
-const getQuery = require('./../getQuery');
 const callback = require('./../callback-http-200');
 
 module.exports = (Model) => {
    return (req, res) => {
-      let queryData = getQuery(req);
-      const conditions = {_id: queryData._id};
-      Model.update(conditions, queryData, (err, data) => callback(err, data, res));
+      let query = { _id: req.params.id };
+      let mod = req.body;
+      let options = { runValidators: true };
+
+      Model.update(query, mod, options, (err, data) => callback(err, data, res));
   }
 }

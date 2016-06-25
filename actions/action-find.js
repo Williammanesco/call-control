@@ -1,11 +1,11 @@
 'use strict'
 
-const getQuery = require('./../getQuery');
 const callback = require('./../callback-http-200');
+const getQuery = require('./../getQuery');
 
 module.exports = (Model) => {
     return (req, res) => {
-      const query = getQuery(req);
-      Model.find(query, (error, users) =>	callback(error, users, res));
+      let obj = req.body;
+      Model.find(obj, (error, users) =>	callback(error, users, res));
   }
 }
