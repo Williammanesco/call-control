@@ -6,6 +6,8 @@ const getQuery = require('./../getQuery');
 module.exports = (Model) => {
     return (req, res) => {
       let obj = req.body;
-      Model.find(obj, (error, users) =>	callback(error, users, res));
+      let query = getQuery(req);
+      console.log(query);
+      Model.find(query, (error, users) =>	callback(error, users, res));
   }
 }

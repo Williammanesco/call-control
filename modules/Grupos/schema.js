@@ -7,11 +7,8 @@ const _Schema = {
   , required: true
   , index: true
   }
-  , identificador_dono: {
-      type: String
-//    , required: true
-//    , index: true
-    }
+  , id_usuario: Schema.Types.ObjectId
+
 }
 
 module.exports = new Schema(_Schema);
