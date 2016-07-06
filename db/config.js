@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
-const dbURI = 'mongodb://localhost/webservice';
+const dbURI = 'mongodb://' + $OPENSHIFT_MONGODB_DB_HOST + ':' + $OPENSHIFT_MONGODB_DB_PORT + '/apicallcontrol'
+
+//mongodb://localhost/webservice';
 
 mongoose.connect(dbURI);
 
