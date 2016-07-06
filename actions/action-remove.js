@@ -6,7 +6,6 @@ module.exports = (Model) => {
      return (req, res) => {
       let query = getQuery(req);
 
-      console.log(query);
       Model.remove(query, (err, data) => callback(err, data, res));
   }
 }

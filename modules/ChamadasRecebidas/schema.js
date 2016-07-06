@@ -10,15 +10,15 @@ const _Schema = {
 , telefone: String
 , duracao: String
 , finalizada: String
-, data: {type: Date, default: Date.now }
+, data: {type: Date, default: new Date() }
 }
 
 /*
 db.chamadasrealizadas.save({
-  id_grupo:ObjectId('57757fdb625836b00482c1bc'),
-  nome_usuario:'Alini linda',
-  telefone:'(12) 3131-2312',
-  duracao: '05:00',
+  id_grupo:ObjectId('577c4277b4b2a07c1ed7f52b'),
+  nome_usuario:'William Manesco',
+  telefone:'(44) 9957-1781',
+  duracao: '00:15',
   finalizada: 'S'
 })
 */

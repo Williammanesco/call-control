@@ -10,7 +10,7 @@ const _Schema = {
 , telefone: String
 , duracao: String
 , finalizada: String
-, data: { type: Date, default: Date.now }
+, data: { type: Date, default: new Date() }
 }
 
 module.exports = new Schema(_Schema);
