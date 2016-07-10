@@ -4,7 +4,7 @@ const GrupoController = require('./Controller');
 
 router.get('/', GrupoController.find );
 router.post('/', GrupoController.create );
-router.put('/', GrupoController.update );
+router.put('/:id', GrupoController.update );
 router.delete('/', GrupoController.remove );
 
 module.exports = router;

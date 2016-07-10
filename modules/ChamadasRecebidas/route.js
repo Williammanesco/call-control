@@ -4,7 +4,7 @@ const ChamadaController = require('./Controller');
 
 router.get('/', ChamadaController.find );
 router.post('/', ChamadaController.create );
-router.put('/', ChamadaController.update );
+router.put('/:id', ChamadaController.update );
 router.delete('/', ChamadaController.remove );
 
 module.exports = router;

@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const dbURI = 'mongodb://' + $OPENSHIFT_MONGODB_DB_HOST + ':' + $OPENSHIFT_MONGODB_DB_PORT + '/apicallcontrol'
+const dbURI = 'mongodb://localhost/webservice'
 
 //mongodb://localhost/webservice';
 
